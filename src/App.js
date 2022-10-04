@@ -4,7 +4,7 @@ import "./Weather.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="Zurich" />
     </div>
   );
 }
