@@ -4,11 +4,23 @@
   }
 
   .container {
-    margin-top: 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .WeatherInfo {
+    margin: 0 !important;
   }
 
   .main-text {
-    font-size: 24px !important;
+    font-size: 28px !important;
+  }
+
+  .namedDay {
+    font-size: 16px !important;
+  }
+
+  div .icon {
+    font-size: 30px !important;
   }
 
   .search-width {
@@ -16,7 +28,7 @@
   }
 
   .source {
-    font-size: 10px;
+    font-size: 8px !important;
   }
 }
 
@@ -43,13 +55,13 @@ button:hover {
   font-size: 18px;
 }
 
-.row #line {
-  margin: 0 600px auto;
+a {
+  text-decoration: none;
 }
 
 .container {
   max-width: 100%;
-  margin-top: 140px;
+  margin-top: 120px;
   background-image: linear-gradient(
     rgb(255, 255, 255),
     rgb(57, 119, 252, 80%),
@@ -60,24 +72,29 @@ button:hover {
 
 .main-text {
   font-size: 32px;
-  color: rgba(90, 90, 90, 0.9);
-  text-shadow: 0 0 2px rgb(100, 100, 100);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 2px rgb(255, 255, 255);
   line-height: 30px;
+}
+
+.WeatherInfo {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .temperature {
   color: rgba(90, 90, 90, 0.9);
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 300;
-  line-height: 40px;
-  margin-left: 10px;
+  line-height: 50px;
+  margin-left: 4px;
 }
 
 .unit {
   font-style: italic;
   color: rgba(90, 90, 90, 0.9);
   position: relative;
-  top: -22px;
+  top: -30px;
 }
 
 .search-city {
@@ -110,17 +127,17 @@ button:hover {
 }
 
 .col-6 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  line-height: 22px;
+  line-height: 18px;
   display: flex;
-  justify-content: space-around;
-  color: rgba(90, 90, 90, 0.6);
+  text-align: justify;
+  justify-content: center;
+  color: rgba(90, 90, 90, 0.9);
 }
 
-.WeatherInfo {
+.App {
   display: block;
-  margin: 0 100px auto;
   text-align: center;
 }
 
@@ -142,7 +159,7 @@ button:hover {
 
 .namedDay {
   text-shadow: 0 0 1.5px rgb(149, 149, 149);
-  color: rgba(90, 90, 90, 0.9);
+  color: rgba(90, 90, 90, 0.6);
   font-size: 20px;
   letter-spacing: -0.6px;
   line-height: 26px;
