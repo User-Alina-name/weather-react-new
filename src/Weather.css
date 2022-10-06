@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
   body {
-    margin-top: 0 !important;
+    margin: 0 !important;
   }
 
   .container {
@@ -11,8 +11,14 @@
     font-size: 28px !important;
   }
 
-  .namedDay {
+  .namedDay,
+  .namedDays {
     font-size: 16px !important;
+  }
+
+  .forecastTempMax,
+  .forecastTempMin {
+    font-size: 14px;
   }
 
   div .icon {
@@ -20,7 +26,8 @@
   }
 
   .search-width {
-    max-width: 110%;
+    max-width: 100%;
+    margin: 0 !important;
   }
 
   .source {
@@ -68,57 +75,58 @@ a {
 
 .main-text {
   font-size: 32px;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 2px rgb(255, 255, 255);
+  color: rgba(255, 252, 80);
+  text-shadow: 0 0 2px rgb(255, 252, 80, 0.7);
   line-height: 30px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .WeatherInfo {
+  text-align: justify;
   max-width: 400px;
   margin: 0 auto;
 }
 
 .WeatherForecast {
-  max-width: 600px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
-.WeatherForecast .col {
-  padding: 0 10px;
-}
-
 .temperature {
-  color: rgba(90, 90, 90, 0.9);
+  color: rgba(70, 70, 70, 0.9);
   font-size: 60px;
   font-weight: 300;
   line-height: 50px;
-  margin-left: 4px;
+  margin-left: 10px;
 }
 
 .forecastTempMax {
-  color: rgba(90, 90, 90, 0.8);
+  color: rgba(90, 90, 90, 0.7);
+  text-shadow: 0 0 1.5px rgb(57, 119, 252, 0.5);
 }
 
 .forecastTempMin {
   color: rgba(90, 90, 90);
+  text-shadow: 0 0 1.5px rgb(57, 119, 252, 0.7);
 }
 
 .unit {
   font-style: italic;
-  color: rgba(90, 90, 90, 0.9);
+  color: rgba(70, 70, 70, 0.9);
   position: relative;
   top: -30px;
 }
 
 .search-city {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .search-width {
-  width: 240px;
-  border: 1.5px solid rgba(90, 90, 90, 0.9);
+  width: 340px;
+  margin: 0 30px;
+  border: 1.5px solid rgba(90, 90, 90, 0.2);
   border-radius: 8px;
   padding: 5px;
   background: scroll;
@@ -133,7 +141,8 @@ a {
 }
 
 .lupa {
-  font-size: 22px;
+  font-size: 24px;
+  opacity: 80%;
   border: none;
   background: scroll;
   transition: all 200ms ease-in-out;
@@ -147,7 +156,7 @@ a {
   display: flex;
   text-align: justify;
   justify-content: center;
-  color: rgba(90, 90, 90, 0.9);
+  color: rgba(70, 70, 70, 0.9);
 }
 
 .App {
@@ -172,10 +181,15 @@ a {
 }
 
 .namedDay {
-  text-shadow: 0 0 1.5px rgb(149, 149, 149);
-  color: rgba(90, 90, 90);
-  font-size: 20px;
-  letter-spacing: -0.6px;
+  color: rgba(70, 70, 70);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.namedDays {
+  text-shadow: 0 0 1.5px rgb(57, 119, 252, 0.7);
+  color: rgba(110, 110, 110);
+  font-size: 18px;
   line-height: 26px;
 }
 
